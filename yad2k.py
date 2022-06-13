@@ -14,10 +14,9 @@ from collections import defaultdict
 import numpy as np
 from keras import backend as K
 from keras.layers import (Conv2D, GlobalAveragePooling2D, Input, Lambda,
-                          MaxPooling2D)
+                          MaxPooling2D, BatchNormalization)
 from keras.layers.advanced_activations import LeakyReLU
 from keras.layers.merge import concatenate
-from keras.layers.normalization import BatchNormalization
 from keras.models import Model
 from keras.regularizers import l2
 from keras.utils.vis_utils import plot_model as plot
